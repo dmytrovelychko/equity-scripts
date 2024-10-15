@@ -1,0 +1,9 @@
+services:
+  equity_calculator:
+    container_name: equity_calculator
+    build:
+      context: .
+    volumes:
+      - .:/usr/app/src
+    working_dir: /usr/app/src
+    command: python scripts/calculate.py
