@@ -89,4 +89,4 @@ def main(max_iterations=None, sample_percentage=100):
 
 
 if __name__ == "__main__":
-    main(max_iterations=2, sample_percentage=100)
+    main(max_iterations=None, sample_percentage=100)
