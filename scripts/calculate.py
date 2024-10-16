@@ -69,7 +69,7 @@ def process_row(row_data):
 
     db.insert(row['First'], row['Second'], row['A'], row['B'], row['C'], row['D'], row['E'], row['F'], row['Concat'], str(ev_hand))
 
-    logging.info(f'{idx:.2f} - {ev_hand:.2f} - Calculated')
+    logging.info(f'{idx:.2f} Calculated')
 
 
 def main(max_iterations=None, sample_percentage=100):
@@ -101,4 +101,4 @@ def main(max_iterations=None, sample_percentage=100):
 
 
 if __name__ == "__main__":
-    main(max_iterations=2, sample_percentage=100)
+    main(max_iterations=None, sample_percentage=100)
