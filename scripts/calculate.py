@@ -69,8 +69,6 @@ def process_row(row_data):
 
     db.insert(row['First'], row['Second'], row['A'], row['B'], row['C'], row['D'], row['E'], row['F'], row['Concat'], str(ev_hand))
 
-    logging.info(f'{idx:.2f} Calculated')
-
 
 def main(max_iterations=None, sample_percentage=100):
     logging.info(f'Start')
